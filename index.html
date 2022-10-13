@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./main.js" defer></script>
+    <title>Test</title>
+</head>
+<body>
+   <header>
+    <div class="p-1  bg-info text-dark text-center header-info"><img src="./img/like.png" alt="Like-Image"> <img src="./img/dress.png" alt="Dress-Image"> Брендовий верхній одяг від 899 грн</div>
+    <div class="container">
+        <!--Создание первой колонки с инфой в шапке-->
+        <div class="row m-2 mt-4 pb-4 header-items">
+            <!--Логотип-->
+            <div class="col-2 logo"><img src="./img/logo.png" alt="Logo"></div>
+            <!--Поле поиска-->
+            <div class="col-6 search-group">
+                <div class="input-group">
+                <span class="input-group-text input-search" id="basic-addon1"><img src="./img/search-icon.png" alt=""></span>
+                <input type="text" class="form-control search" placeholder="Знайти речі або бренди" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <!--Конец поля поиска-->
+
+            <div class="col-4" style="display:flex ;">
+                <!--Кнопка-->
+                <button type="button" class=" btn btn-dark ">Додати товар</button>
+                <!--Конец кнопки-->
+
+                <!--Выпадающий список-->
+                <div class="dropdown">
+                    <a class="btn  dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                      Укр
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Eng</a></li>
+                      <li><a class="dropdown-item" href="#">Рус</a></li>
+                    </ul>
+                  </div>
+                  <!--Конец выпадающего списка-->
+                  <!--Иконки-->
+                  <div class="icons">
+                   <span class="icons-item"><img src="./img/heart.png" alt="Likes count" ><span class="count-number">8</span></span>
+                    <span class="icons-item"><img src="./img/comment.png" alt="Comments" ><span class="count-number new-comment">3</span></span>
+                    <span class="icons-item"><img src="./img/shop.png" alt="Shop icon" ><span class="count-number">3</span></span>
+                  </div>
+                  <!--Конец иконок-->
+                  <!--Иконка пользователя-->
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="./img/avatar.png" alt="Avatar">
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Товары</a></li>
+                      <li><a class="dropdown-item" href="#">Настройки</a></li>
+                      <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                  </div>
+                  <!--Конец иконки пользователя-->
+            </div>
+        </div>
+        <!--Создание меню в шапке-->
+        <div class="row">
+            <!--Создание меню-->
+            <div class="col-9">
+                <nav class="navbar navbar-expand-lg navbar-light " style="padding-bottom:0 ;">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item"  href="#">Головна</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link active nav-link-item active"  href="#">Каталог</a>
+                          </li>
+                          <li class="nav-item  menu-item">
+                            <a class="nav-link nav-link-item" href="#">Жінкам</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Чоловікам</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">дИТЯЧі речі</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Аукціон</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Бренди</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Акції</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Аутентифікація</a>
+                          </li>
+                          <li class="nav-item menu-item">
+                            <a class="nav-link nav-link-item" href="#">Блог</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+   </header>
+
+    <div class="container">
+              <!--Создание хлебных крошек-->
+              <div class="row ml-2" style="margin-left:15px; margin-top:30px;">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-items"><a href="#">Головна</a></li>
+                    <li class="breadcrumb-item breadcrumb-items active" aria-current="page">Каталог одягу</li>
+                  </ol>
+                </nav>
+              </div>
+              <h4>Каталог одягу</h4>
+              <div class="filters">
+                <div class="filter">
+                   <p>Фільтри</p> 
+                </div>
+                <div class="options">
+                    <span>Сортувати за:</span>
+                    <span>
+                      <div class="btn-group ">
+                        <button class="btn btn-secondary btn-sm filters-dropdown" type="button">
+                          За замовчуванням
+                        </button>
+                        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split filters-dropdown-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">2</a></li>
+                          <li><a class="dropdown-item" href="#">3</a></li>
+                        </ul>
+                        </div>
+                    </span>
+                </div>
+              </div>
+    </div>
+
+<!--Создание боковой панели и основной части-->
+<div class="container">
+  <div class="row m-2">
+    <aside class="col-3">
+      <ul class="filter-list">
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Категорії
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Ціна
+              </span>
+             
+            </div>
+          </button>
+          <div class="filter-sub">
+            <div class="price">
+              <div class="price-range-scale">
+                <div class="price-range-bar"></div>
+              </div>
+                  <button class="price-range-handle min"></button>
+                  <button class="price-range-handle max" style="left: 53%;"></button>
+            
+              <div class="price-interval">
+                <label class="price-lable">Від <br><input class="price-input" type="text" name="min-interval" value="980"></label>
+                <label class="price-lable">До <br><input class="price-input" type="text" name="max-interval" value="20465"></label>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Продавець
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Бренд
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Стать
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub">
+            <label class="sex-lable">
+              <input type="checkbox" name="sex" value="male" class="sex-input" checked>
+              <span class="sex-input2"></span>
+              <span style="margin-left:25px;">Жінкам</span>  <span class="sex-count">(64)</span>
+            </label>
+            
+            <label class="sex-lable">
+              <input type="checkbox" name="sex" value="male" class="sex-input" checked>
+              <span class="sex-input2"></span>
+              <span style="margin-left:25px;">Чоловікам</span>  <span class="sex-count">(16)</span>
+            </label>
+            
+            <label class="sex-lable">
+              <input type="checkbox" name="sex" value="male" class="sex-input">
+              <span class="sex-input2"></span>
+              <span style="margin-left:25px;">Унісекс</span>  <span class="sex-count">(24)</span>
+            </label>
+          </div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Розмір
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Колір
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Матеріал
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Сезон
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter__link filter__link_active">
+            <div class="filter-item-wrap">
+              <span class="filter-item__title">
+                Стиль
+              </span>
+            </div>
+          </button>
+          <div class="filter-sub hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque veniam ex sunt, eum commodi necessitatibus repudiandae natus totam officiis ab fugit saepe aut ipsa harum aliquam amet voluptatem. Repellat.</div>
+        </li>
+      </ul>
+    </aside>
+    <main class="col-9">
+      <div class="row" style="flex-wrap: inherit; ">
+      <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+        <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+        <img src="./img/card1.png" class="card-img-top" alt="..." style="margin-top: 5px;">
+        <div class = "card-top-price">ТОП</div>
+        <div class="card-brand">LOUIS VUITTON</div>
+        <div class="card-description">Темно-сині джинси Louis Vuitton</div>
+        <div class="price-and-other">
+          <div class="prices">
+            <div class="old-price">5499</div>
+            <div class="new-price">3799</div>
+          </div>
+          <div class="other">
+            <div class="location">
+              <img src="./img/location.png" alt="">
+              <span class="city">Херсон</span>
+            </div>
+            <div class="autor">
+                <img src="./img/author1.png" alt="" class="author-photo">
+                <span class="author-name">LoveBrand</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+        <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+        <img src="./img/card2/image 2 (1).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+        <div class = "card-top-price">ТОП</div>
+        <div class="card-brand">THOM BROWNE</div>
+        <div class="card-description">Чорний піджак Thom Browne</div>
+        <div class="price-and-other">
+          <div class="prices">
+            <div class="old-price">11 999 </div>
+            <div class="new-price">8 599 </div>
+          </div>
+          <div class="other">
+            <div class="location">
+              <img src="./img/location.png" alt="">
+              <span class="city">Хмельницький</span>
+            </div>
+            <div class="autor">
+                <img src="./img/card2/avatar (3).png" alt="" class="author-photo">
+                <span class="author-name">Sell_For_Men</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+        <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+        <img src="./img/card3/image 2 (2).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+        <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+        <div class="card-brand">CANALI</div>
+        <div class="card-description">Вовняний піджак Canali</div>
+        <div class="price-and-other">
+          <div class="prices">
+            <div class="old-price">4 999  </div>
+            <div class="new-price">2 599  </div>
+          </div>
+          <div class="other">
+            <div class="location">
+              <img src="./img/location.png" alt="">
+              <span class="city">Хмельницький</span>
+            </div>
+            <div class="autor">
+                <img src="./img/card2/avatar (3).png" alt="" class="author-photo">
+                <span class="author-name">Sell_For_Men</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row" style="flex-wrap: inherit; margin-top: 24px;">
+        <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+          <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+          <img src="./img/card4/image 2 (3).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+          <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+          <div class="card-brand">LOUIS VUITTON</div>
+          <div class="card-description">Клатч Louis Vuitton Limelight</div>
+          <div class="price-and-other">
+            <div class="prices">
+              <div class="old-price">4 999</div>
+              <div class="new-price">3 499 </div>
+            </div>
+            <div class="other">
+              <div class="location">
+                <img src="./img/location.png" alt="">
+                <span class="city">Дніпро</span>
+              </div>
+              <div class="autor">
+                  <img src="./img/card4/avatar (4).png" alt="" class="author-photo">
+                  <span class="author-name">Brandear</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+          <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+          <img src="./img/card5/image 2 (4).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+          <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+          <div class="card-brand">ELENA GHISELINI</div>
+          <div class="card-description">Сумка з декором Elena Ghisellini</div>
+          <div class="price-and-other">
+            <div class="prices">
+              <div class="old-price">1 999  </div>
+              <div class="new-price">1 599  </div>
+            </div>
+            <div class="other">
+              <div class="location">
+                <img src="./img/location.png" alt="">
+                <span class="city">Дніпро</span>
+              </div>
+              <div class="autor">
+                  <img src="./img/card4/avatar (4).png" alt="" class="author-photo">
+                  <span class="author-name">Brandear</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+          <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+          <img src="./img/card6/image 2 (5).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+          <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+          <div class="card-brand">ACNE</div>
+          <div class="card-description">Бомбер Acne на блискавці</div>
+          <div class="price-and-other">
+            <div class="prices">
+              <div class="old-price">5 999   </div>
+              <div class="new-price">4 199   </div>
+            </div>
+            <div class="other">
+              <div class="location">
+                <img src="./img/location.png" alt="">
+                <span class="city">Київ</span>
+              </div>
+              <div class="autor">
+                  <img src="./img/card6/avatar (5).png" alt="" class="author-photo">
+                  <span class="author-name">Alexalex</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row" style="flex-wrap: inherit; margin-top: 24px;">
+          <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+            <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+            <img src="./img/card7/image 2 (6).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+            <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+            <div class="card-brand">GUCCI</div>
+            <div class="card-description">Довга сукня Gucci</div>
+            <div class="price-and-other">
+              <div class="prices">
+                <div class="old-price">11 999 </div>
+                <div class="new-price">8 599  </div>
+              </div>
+              <div class="other">
+                <div class="location">
+                  <img src="./img/location.png" alt="">
+                  <span class="city">Рівне</span>
+                </div>
+                <div class="autor">
+                    <img src="./img/card7/avatar (6).png" alt="" class="author-photo">
+                    <span class="author-name">SellBuy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+            <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+            <img src="./img/card8/image 2 (7).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+            <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+            <div class="card-brand">CHANEL</div>
+            <div class="card-description">Помаранчевий бомбер Woolrich</div>
+            <div class="price-and-other">
+              <div class="prices">
+                <div class="old-price">1 999  </div>
+                <div class="new-price">1 599  </div>
+              </div>
+              <div class="other">
+                <div class="location">
+                  <img src="./img/location.png" alt="">
+                  <span class="city">Кропивницький</span>
+                </div>
+                <div class="autor">
+                    <img src="./img/card8/avatar (7).png" alt="" class="author-photo">
+                    <span class="author-name">Deeva_Sofia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 312px;height: 515px;margin-left: 24px;padding: 24px; box-sizing: border-box;">
+            <img src="./img/heart-2.png" alt="" style="margin-left:90%; width:20px;height:15px;">
+            <img src="./img/card9/image 2 (8).png" class="card-img-top" alt="..." style="margin-top: 5px;">
+            <div class = "card-top-price" style="opacity: 0;">ТОП</div>
+            <div class="card-brand">HACHE</div>
+            <div class="card-description">Салатове пальто Hache</div>
+            <div class="price-and-other">
+              <div class="prices">
+                <div class="old-price">5 999   </div>
+                <div class="new-price">4 199   </div>
+              </div>
+              <div class="other">
+                <div class="location">
+                  <img src="./img/location.png" alt="">
+                  <span class="city">Київ</span>
+                </div>
+                <div class="autor">
+                    <img src="./img/card9/avatar (8).png" alt="" class="author-photo">
+                    <span class="author-name">LoveBrand</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row" style="margin-top: 60px;">
+            <nav aria-label="..." style="margin: 0 auto;">
+              <ul class="pagination" style="margin-left: 170px;">
+                <li class="page-item ">
+                  <span class="page-link pag-button">Попередня</span>
+                </li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">1</a></li>
+                <li class="page-item " aria-current="page">
+                  <span class="page-link pag-buttons chosen">2</span>
+                </li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">3</a></li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">4</a></li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">5</a></li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">6</a></li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">7</a></li>
+                <li class="page-item"><a class="page-link pag-buttons" href="#">8</a></li>
+                <li class="page-item">
+                  <a class="page-link pag-button" href="#">Наступна</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    </main>
+  </div>
+  
+</div>
+<!--Создание подвала-->
+<footer class="container" style="max-width: 100%; padding-left: 204px; padding-top: 72px; padding-right: 50px; height: 457px; margin-top: 110px;">
+  <div class="row" style="border-bottom:1px solid #C4C7C7 ;padding-bottom: 72px;">
+    <div class="col-3">
+      <div class="footer-item">Довідка для покупців</div>
+      <div class="footer-item">Отримати підтримку</div>
+      <div class="footer-item">Як купувати</div>
+      <div class="footer-item">Як залишити корисний відгук</div>
+      <div class="footer-item">Програма Захисту Покупців</div>
+      <div class="footer-item">Рекомендації з безпечних покупок</div>
+    </div>
+    <div class="col-3">
+      <div class="footer-item">Довідка для продавців</div>
+      <div class="footer-item">Як почати продавати</div>
+      <div class="footer-item">Тарифи</div>
+      <div class="footer-item">Угода користувача</div>
+      <div class="footer-item">Політика конфіденційності</div>
+      <div class="footer-item">Правила користування порталом</div>
+      <div class="footer-item">Бонусна програма</div>
+    </div>
+    <div class="col-3">
+      <div class="footer-item">Про нас</div>
+      <div class="footer-item">Довідка та FAQ</div>
+      <div class="footer-item">Захист легальності контенту</div>
+      <div class="footer-item">Адміністрація</div>
+      <div class="footer-item">Вакансії</div>
+    </div>
+    <div class="col-3">
+      <div class="footer-item">Мобільний додаток</div>
+      <img src="./img/google-play.png" alt="">
+    </div>
+  </div>
+  <p class="paragraph">© 2022 Monvalise</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
